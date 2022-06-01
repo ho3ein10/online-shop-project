@@ -1,0 +1,436 @@
+.darkContainer {
+  width: 70%;
+  min-height: 180px;
+  margin: 50px 50px 50px;
+  border: 1.6px solid #eaeaea;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightContainer {
+  width: 70%;
+  min-height: 180px;
+  margin: 50px 50px 50px;
+  border: 1.6px solid #fff;
+  box-shadow: 4px 4px 16px #000;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkMyOrdersContainer {
+  text-align: left;
+  width: 90%;
+  min-height: 100px;
+  margin-top: 35px;
+  padding: 20px;
+  border: 1.6px solid #eaeaea;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lightMyOrdersContainer {
+  text-align: left;
+  width: 90%;
+  min-height: 100px;
+  margin-top: 35px;
+  padding: 20px;
+  border: 1.6px solid #222;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.customerInfo {
+  text-align: center;
+  min-width: 100%;
+  padding: 10px 0 10px;
+}
+
+.OrderInfo {
+  text-align: center;
+  min-width: 100%;
+  padding: 10px 0 10px;
+}
+
+.darkInfoBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.6px solid rgba(255, 255, 255, 0.3);
+}
+
+.darkInfoBox span {
+  font-weight: bold;
+  color: orange;
+  font-size: 1rem;
+  margin: 10px 0 10px;
+}
+
+.darkInfoBox p {
+  font-size: 1rem;
+  margin: 10px 0 10px;
+}
+
+.lightInfoBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.6px solid rgba(0, 0, 0, 0.3);
+}
+
+.lightInfoBox span {
+  font-weight: bold;
+  color: orange;
+  font-size: 1rem;
+  margin: 10px 0 10px;
+}
+
+.lightInfoBox p {
+  font-size: 1rem;
+  margin: 10px 0 10px;
+}
+
+.darkMyOrderBox {
+  text-align: left;
+  width: 90%;
+  height: 100px;
+  padding: 20px;
+  border-bottom: 1.6px solid #eaeaea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.darkMyOrderBox:last-child {
+  border-bottom: none;
+}
+
+.lightMyOrderBox {
+  text-align: left;
+  width: 90%;
+  height: 100px;
+  padding: 20px;
+  border-bottom: 1.6px solid #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lightMyOrderBox:last-child {
+  border-bottom: none;
+}
+
+.darkImageBox {
+  text-align: left;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border: 1.6px solid #eaeaea;
+  border-radius: 20px;
+}
+
+.lightImageBox {
+  text-align: left;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border: 1.6px solid #222;
+  border-radius: 20px;
+}
+
+.orderImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.darkTextBox {
+  text-align: left;
+  width: 80%;
+  height: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lightTextBox {
+  text-align: left;
+  width: 80%;
+  height: 55%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orderName {
+  color: #0097e6;
+}
+
+.price {
+  width: 65px;
+  text-align: center;
+  display: inline-block;
+  background: #34a853e0;
+  padding: 7px 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.quantityBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.quantityBox span {
+  color: orange;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.quantityBox p {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .darkContainer {
+    width: 80%;
+  }
+  .lightContainer {
+    width: 80%;
+  }
+  .darkTextBox {
+    width: 85%;
+  }
+  .lightTextBox {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .darkContainer {
+    width: 90%;
+  }
+  .lightContainer {
+    width: 90%;
+  }
+  .orderName {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .darkMyOrdersContainer {
+    margin-top: 20px;
+  }
+  .lightMyOrdersContainer {
+    margin-top: 20px;
+  }
+  .darkImageBox {
+    width: 80px;
+    height: 80px;
+  }
+  .lightImageBox {
+    width: 80px;
+    height: 80px;
+  }
+  .darkInfoBox span {
+    font-size: 0.9rem;
+  }
+  .darkInfoBox p {
+    font-size: 0.9rem;
+  }
+  .lightInfoBox span {
+    font-size: 0.9rem;
+  }
+  .lightInfoBox p {
+    font-size: 0.9rem;
+  }
+  .orderName {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .darkMyOrdersContainer {
+    padding: 12px;
+    margin-top: 20px;
+  }
+  .lightMyOrdersContainer {
+    padding: 12px;
+    margin-top: 20px;
+  }
+  .customerInfo h3 {
+    font-size: 0.9rem;
+  }
+  .OrderInfo h3 {
+    font-size: 0.9rem;
+  }
+  .darkInfoBox span {
+    font-size: 0.7rem;
+  }
+  .darkInfoBox p {
+    font-size: 0.7rem;
+  }
+  .lightInfoBox span {
+    font-size: 0.7rem;
+  }
+  .lightInfoBox p {
+    font-size: 0.7rem;
+  }
+  .darkMyOrderBox {
+    height: 180px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .lightMyOrderBox {
+    height: 180px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .darkTextBox {
+    width: 100%;
+    height: 20%;
+  }
+  .lightTextBox {
+    width: 100%;
+    height: 20%;
+  }
+  .orderName {
+    font-size: 0.7rem;
+  }
+  .orderName {
+    font-size: 0.8rem;
+  }
+  .price {
+    font-size: 0.8rem;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .darkMyOrdersContainer {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  .lightMyOrdersContainer {
+    padding: 10px;
+    margin-top: 15px;
+  }
+  .darkInfoBox span {
+    font-size: 0.5rem;
+  }
+  .darkInfoBox p {
+    font-size: 0.5rem;
+  }
+  .lightInfoBox span {
+    font-size: 0.5rem;
+  }
+  .lightInfoBox p {
+    font-size: 0.5rem;
+  }
+  .darkMyOrderBox {
+    height: 140px;
+    padding: 12px;
+  }
+  .lightMyOrderBox {
+    height: 140px;
+    padding: 12px;
+  }
+  .darkImageBox {
+    width: 75px;
+    height: 75px;
+  }
+  .lightImageBox {
+    width: 75px;
+    height: 75px;
+  }
+  .orderName {
+    font-size: 0.65rem;
+  }
+  .price {
+    font-size: 0.5rem;
+    width: 35px;
+  }
+  .quantityBox span {
+    font-size: 0.6rem;
+  }
+  .quantityBox p {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .darkMyOrdersContainer {
+    padding: 5px;
+    margin-top: 13px;
+  }
+  .lightMyOrdersContainer {
+    padding: 5px;
+    margin-top: 13px;
+  }
+  .darkMyOrderBox {
+    height: 180px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .lightMyOrderBox {
+    height: 180px;
+    padding: 10px;
+    justify-content: center;
+  }
+  .darkImageBox {
+    width: 65px;
+    height: 65px;
+  }
+  .lightImageBox {
+    width: 65px;
+    height: 65px;
+  }
+  .darkTextBox {
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .lightTextBox {
+    height: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .orderName {
+    font-size: 0.8rem;
+  }
+  .price {
+    font-size: 0.7rem;
+    width: 45px;
+  }
+  .quantityBox span {
+    font-size: 0.7rem;
+  }
+  .quantityBox p {
+    font-size: 0.7rem;
+  }
+}

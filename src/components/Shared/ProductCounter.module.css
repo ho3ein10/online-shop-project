@@ -1,0 +1,238 @@
+.counterContainer {
+  min-width: 120px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkCounterOperator {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+.darkCounterOperator:hover {
+  color: #fff;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.lightCounterOperator {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+.lightCounterOperator:hover {
+  color: #fff;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.darkTrashIcon {
+  background-image: url("../../icons/dark-trash-icon.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+.darkTrashIcon:hover {
+  background-image: url("../../icons/dark-trash-icon.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.lightTrashIcon {
+  background-image: url("../../icons/light-trash-icon.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+}
+
+.lightTrashIcon:hover {
+  background-image: url("../../icons/dark-trash-icon.svg");
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.counter {
+  display: inline-block;
+  width: 25px;
+  margin: 0 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  animation-name: initialshow;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+.darkCounterDeactive {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  color: #fff;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 20px;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  opacity: 0.4;
+}
+
+.darkCounterDeactive button:hover {
+  background-color: transparent;
+  border: 1.6px solid transparent;
+}
+
+.lightCounterDeactive {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 20px;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 0.6s;
+  animation-iteration-count: 1;
+  opacity: 0.5;
+}
+
+.lightCounterDeactive button:hover {
+  background-color: transparent;
+  border: 1.6px solid transparent;
+}
+
+.darkAddIcon {
+  width: 120px;
+  height: 30px;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.darkAddIcon:hover {
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.lightAddIcon {
+  width: 120px;
+  height: 30px;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  animation-name: initialshow;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.lightAddIcon:hover {
+  color: #fff;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.warningText {
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(220, 20, 60, 0.6);
+  border: 2px solid rgba(160, 20, 60, 0.9);
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  animation-name: initialshow;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes initialshow {
+  0% {
+    transform: scale(0);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

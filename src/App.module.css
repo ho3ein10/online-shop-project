@@ -1,0 +1,13 @@
+.darkMode {
+  color: #fff;
+  background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  transition: all 0.2s ease;
+}
+
+.lightMode {
+  color: #222;
+  background: linear-gradient(90deg, #e0eafc 50%, #cfdef3 100%);
+  transition: all 0.2s ease;
+}
+
+

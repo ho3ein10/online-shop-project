@@ -1,0 +1,194 @@
+.container {
+  position: relative;
+  display: flex;
+  width: 70px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrowIcon {
+  width: 20px;
+  cursor: pointer;
+}
+
+.userIcon {
+  height: 35px;
+}
+
+.userInformation {
+  position: absolute;
+  width: 250px;
+  height: 360px;
+  top: 45px;
+  left: -75px;
+  background: #152449fa;
+  border: 1.6px solid #eaeaea;
+  border-radius: 20px;
+  box-shadow: 4px 4px 16px #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: information;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+
+.userInformation:after {
+  content: " ";
+  position: absolute;
+  left: 83px;
+  top: -10px;
+  border-top: none;
+  border-right: 20px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #eaeaea;
+}
+
+.userInformation h3 {
+  color: #fff;
+}
+
+.userInformation h4,
+h5 {
+  color: #fff;
+  opacity: 0.6;
+}
+
+.informationBox {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+@keyframes information {
+  0% {
+    transform: scale(0);
+    transform: translate(0, -5px);
+  }
+  30% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.bottomContainer {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.editLink {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 2px;
+  padding: 0 1px;
+  transition: all 0.4s ease;
+  font-size: 1rem;
+}
+
+.editLink:hover {
+  color: #0097e6;
+}
+
+.listIcon {
+  width: 15px;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
+.sortList {
+  width: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.logoutButton {
+  width: 90px;
+  height: 30px;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #eaeaea;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.logoutButton:hover {
+  background-color: rgba(220, 20, 60, 0.8);
+  border: 2px solid rgba(220, 20, 60, 0.9);
+  color: #eaeaea;
+}
+
+@media only screen and (max-width: 1200px) {
+  .userInformation {
+    left: -100px;
+  }
+  .userInformation:after {
+    left: 109px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .arrowIcon {
+    width: 15px;
+    cursor: pointer;
+  }
+  .userIcon {
+    height: 30px;
+  }
+  .userInformation {
+    width: 200px;
+    height: 305px;
+    left: -120px;
+  }
+  .userInformation:after {
+    left: 130px;
+  }
+  .editLink {
+    font-size: 0.8rem;
+  }
+  .logoutButton {
+    width: 80px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .arrowIcon {
+    width: 10px;
+    cursor: pointer;
+  }
+  .userIcon {
+    height: 25px;
+  }
+  .userInformation {
+    width: 150px;
+    height: 255px;
+    left: -65px;
+    background: #0c1939fa;
+  }
+  .userInformation:after {
+    left: 78px;
+  }
+  .editLink {
+    font-size: 0.7rem;
+  }
+  .logoutButton {
+    width: 65px;
+    height: 23px;
+    font-size: 0.6rem;
+  }
+}

@@ -1,0 +1,20 @@
+.container {
+  height: 35px;
+  background: #2f3542;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.container p {
+  line-height: 35px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 420px) {
+  .container p {
+    font-size: 0.8rem;
+    line-height: 35px;
+    font-weight: bold;
+  }
+}

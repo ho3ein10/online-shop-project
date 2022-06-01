@@ -1,0 +1,411 @@
+.mainContainer {
+  margin-top: 10vh;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.darkContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 450px;
+  border: 1.6px solid #eaeaea;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.lightContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  height: 450px;
+  border: 1.6px solid #fff;
+  box-shadow: 4px 4px 16px #000;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.darkImageBox {
+  text-align: left;
+  width: 35%;
+  height: 90%;
+  margin: 0 20px;
+  overflow: hidden;
+  border: 1.6px solid #eaeaea;
+  border-radius: 20px;
+}
+
+.lightImageBox {
+  text-align: left;
+  width: 35%;
+  height: 90%;
+  margin: 0 20px;
+  overflow: hidden;
+  border: 1.6px solid #222;
+  border-radius: 20px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.darkTextBox {
+  text-align: left;
+  width: 55%;
+  height: 81%;
+  margin: 0 20px;
+  padding: 20px;
+  border: 1.6px solid #eaeaea;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.darkTextBox h3 {
+  color: #0097e6;
+  margin: 10px 0 30px;
+}
+
+.lightTextBox {
+  text-align: left;
+  width: 55%;
+  height: 81%;
+  margin: 0 20px;
+  padding: 20px;
+  border: 1.6px solid #222;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lightTextBox h3 {
+  color: #0097e6;
+  margin: 10px 0 30px;
+}
+
+.description {
+  margin-bottom: 30px;
+  text-indent: 5px;
+  line-height: 1.1;
+}
+
+.description::first-letter {
+  font-weight: bold;
+}
+
+.informations {
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.informations span {
+  color: orange;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+
+.informations p {
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+.bottomBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: inline-block;
+  background: #34a853e0;
+  padding: 7px 16px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.darkHomeButton {
+  width: 140px;
+  height: 50px;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #eaeaea;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.darkHomeButton:hover {
+  color: #eaeaea;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.lightHomeButton {
+  width: 140px;
+  height: 50px;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #222;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.lightHomeButton:hover {
+  color: #eaeaea;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.darkAlternativeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 450px;
+  border: 1.6px solid #eaeaea;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.lightAlternativeBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 450px;
+  border: 1.6px solid #fff;
+  box-shadow: 4px 4px 16px #000;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+@media only screen and (max-width: 1030px) {
+  .darkContainer {
+    width: 750px;
+    height: 350px;
+  }
+  .lightContainer {
+    width: 750px;
+    height: 350px;
+  }
+  .darkAlternativeBox {
+    width: 750px;
+    height: 350px;
+  }
+  .lightAlternativeBox {
+    width: 750px;
+    height: 350px;
+  }
+  .darkTextBox {
+    margin: 0;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  .darkTextBox h3 {
+    margin: 10px 0 15px;
+  }
+  .lightTextBox {
+    margin: 0;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+  .lightTextBox h3 {
+    margin: 10px 0 15px;
+  }
+  .description {
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  .darkHomeButton {
+    width: 100px;
+    height: 40px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+  }
+  .lightHomeButton {
+    width: 100px;
+    height: 40px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+  }
+  .informations {
+    margin-bottom: 15px;
+  }
+  .informations span {
+    font-size: 0.8rem;
+  }
+  .informations p {
+    font-size: 0.8rem;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .darkContainer {
+    width: 550px;
+    height: 285px;
+  }
+  .lightContainer {
+    width: 550px;
+    height: 285px;
+  }
+  .darkAlternativeBox {
+    width: 550px;
+    height: 285px;
+  }
+  .lightAlternativeBox {
+    width: 550px;
+    height: 285px;
+  }
+  .darkImageBox {
+    height: 89%;
+    margin: 0 10px;
+  }
+  .lightImageBox {
+    height: 89%;
+    margin: 0 10px;
+  }
+  .darkTextBox {
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .darkTextBox h3 {
+    margin: 5px 0 10px;
+  }
+  .lightTextBox {
+    margin: 0;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .lightTextBox h3 {
+    margin: 5px 0 10px;
+  }
+  .description {
+    font-size: 0.62rem;
+    margin-bottom: 10px;
+  }
+  .darkHomeButton {
+    width: 80px;
+    height: 30px;
+    font-size: 0.6rem;
+    border-radius: 8px;
+  }
+  .lightHomeButton {
+    width: 80px;
+    height: 30px;
+    font-size: 0.6rem;
+    border-radius: 8px;
+  }
+  .informations {
+    margin-bottom: 10px;
+  }
+  .informations span {
+    font-size: 0.6rem;
+  }
+  .informations p {
+    font-size: 0.6rem;
+    margin-right: 7px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .darkContainer {
+    flex-direction: column;
+    width: 290px;
+    height: 550px;
+    margin: 30px 0;
+  }
+  .lightContainer {
+    flex-direction: column;
+    width: 290px;
+    height: 550px;
+    margin: 30px 0;
+  }
+  .darkAlternativeBox {
+    width: 290px;
+    height: 550px;
+    margin: 30px 0;
+  }
+  .lightAlternativeBox {
+    width: 290px;
+    height: 550px;
+    margin: 30px 0;
+  }
+  .darkImageBox {
+    width: 91%;
+    height: 35%;
+    margin: 10px 0;
+  }
+  .lightImageBox {
+    width: 91%;
+    height: 35%;
+    margin: 10px 0;
+  }
+  .darkTextBox {
+    width: 84%;
+    height: 55%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 0.65rem;
+    align-items: center;
+  }
+  .darkTextBox h3 {
+    margin: 5px 0 10px;
+  }
+  .lightTextBox {
+    width: 84%;
+    height: 55%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 0.65rem;
+    align-items: center;
+  }
+  .lightTextBox h3 {
+    margin: 5px 0 10px;
+  }
+  .description {
+    font-size: 0.6rem;
+    margin-bottom: 10px;
+  }
+  .darkHomeButton {
+    margin-left: 50px;
+    border-radius: 8px;
+  }
+  .lightHomeButton {
+    margin-left: 50px;
+    border-radius: 8px;
+  }
+  .informations {
+    margin-bottom: 10px;
+  }
+  .informations span {
+    font-size: 0.55rem;
+  }
+  .informations p {
+    font-size: 0.5rem;
+    margin-right: 5px;
+  }
+}

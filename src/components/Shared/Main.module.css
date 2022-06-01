@@ -1,0 +1,150 @@
+.container {
+  min-height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.shopStore {
+  width: 350px;
+  animation-name: shopStore;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.shopStore:hover {
+  width: 350px;
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.handIcon {
+  width: 60px;
+  margin-bottom: 20px;
+  animation-name: handIcon;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.container h1 {
+  font-size: 3rem;
+}
+
+@keyframes shopStore {
+  0% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes handIcon {
+  0% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(-100px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes handIconRotated {
+  0% {
+    transform: translate(0, 0) rotate(270deg);
+  }
+  45% {
+    transform: translate(0, 50px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(270deg);
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .shopStore {
+    width: 300px;
+  }
+  .handIcon {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  .container h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .shopStore {
+    width: 250px;
+  }
+  .handIcon {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  .container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .shopStore {
+    width: 200px;
+  }
+  .handIcon {
+    width: 30px;
+    margin-bottom: 5px;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .container {
+    min-height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .rightContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .handIcon {
+    margin-top: 10px;
+    animation-name: handIconRotated;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .shopStore {
+    width: 180px;
+  }
+  .handIcon {
+    width: 25px;
+    margin-bottom: 5px;
+  }
+  .container h1 {
+    font-size: 1.2rem;
+  }
+}

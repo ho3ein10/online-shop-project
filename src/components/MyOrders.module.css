@@ -1,0 +1,96 @@
+.container {
+  margin-top: 10vh;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.darkEmptyListBox {
+  width: 400px;
+  height: 200px;
+  text-align: left;
+  border: 1.6px solid #eaeaea;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lightEmptyListBox {
+  width: 400px;
+  height: 200px;
+  text-align: left;
+  border: 1.6px solid #fff;
+  box-shadow: 4px 4px 16px #000;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.darkButton {
+  width: 120px;
+  height: 40px;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #eaeaea;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.darkButton:hover {
+  color: #eaeaea;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.lightButton {
+  width: 120px;
+  height: 40px;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #222;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.lightButton:hover {
+  color: #eaeaea;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+@media only screen and (max-width: 480px) {
+  .darkEmptyListBox {
+    width: 280px;
+    font-size: 0.85rem;
+  }
+  .lightEmptyListBox {
+    width: 280px;
+    font-size: 0.85rem;
+  }
+  .darkButton {
+    width: 110px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  .lightButton {
+    width: 110px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}

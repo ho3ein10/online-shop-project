@@ -1,0 +1,68 @@
+#darkButtonFrame {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background: #222;
+  transition: 0.5s;
+  box-shadow: inset 0 0.5px 5px rgba(0, 0, 0, 1),
+    inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -0.5px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+#lightButtonFrame {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background: #eaeaea;
+  transition: 0.5s;
+  box-shadow: inset 0 0.5px 3px rgba(0, 0, 0, 1),
+    inset 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 -0.5px 1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.darkButtonChanger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 100%;
+  transform: scale(0.9);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 1),
+    inset 0 1px 1px rgba(255, 255, 255, 0.2),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+
+.lightButtonChanger {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(to bottom, #fff, #ebebeb);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 1), inset 0 1px 1px rgba(0, 0, 0, 0.2),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.moonIcon {
+  position: absolute;
+  top: 3.5px;
+  left: 2px;
+  width: 18px;
+}
+
+.sunIcon {
+  position: absolute;
+  top: 3.5px;
+  left: 29px;
+  width: 18px;
+}

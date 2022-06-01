@@ -1,0 +1,247 @@
+.mainContainer {
+  margin-top: 10vh;
+  min-height: 85vh;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 160px 0;
+}
+
+.cartContainer {
+  width: 68%;
+}
+
+.darkPaymentsBox {
+  width: 28%;
+  height: 180px;
+  text-align: left;
+  border: 1.6px solid #eaeaea;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.lightPaymentsBox {
+  width: 28%;
+  height: 180px;
+  text-align: left;
+  border: 1.6px solid #fff;
+  box-shadow: 4px 4px 16px #000;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.totalContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.totalContainer p {
+  margin-top: 20px;
+}
+
+.totalContainer p span {
+  color: #0097e6;
+  font-weight: bold;
+}
+
+.buttonContainer {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px 10px;
+}
+
+.darkClearButton {
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  transition: all 0.2s ease;
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.darkClearButton:hover {
+  color: rgba(220, 20, 60, 0.9);
+}
+
+.lightClearButton {
+  cursor: pointer;
+  color: #222;
+  background: none;
+  border: none;
+  transition: all 0.2s ease;
+  font-size: 1.2rem;
+  margin-right: 20px;
+}
+
+.lightClearButton:hover {
+  color: rgba(220, 20, 60, 0.9);
+}
+
+.darkButton {
+  width: 120px;
+  height: 40px;
+  border: 1.6px solid #eaeaea;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #eaeaea;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.darkButton:hover {
+  color: #eaeaea;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+.lightButton {
+  width: 120px;
+  height: 40px;
+  border: 1.6px solid #222;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #222;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.4s ease;
+}
+
+.lightButton:hover {
+  color: #eaeaea;
+  background-color: #0097e6;
+  border: 1.6px solid #0097e6;
+}
+
+@media only screen and (max-width: 1420px) {
+  .container {
+    padding: 80px 60px 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 80px 30px 0;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .darkPaymentsBox {
+    height: 170px;
+  }
+  .lightPaymentsBox {
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10px 0;
+  }
+  .cartContainer {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .cartContainer {
+    width: 80%;
+  }
+  .darkPaymentsBox {
+    width: 35%;
+    height: 170px;
+  }
+  .lightPaymentsBox {
+    width: 35%;
+    height: 170px;
+  }
+  .darkButton {
+    width: 110px;
+    height: 38px;
+    font-size: 1rem;
+  }
+  .lightButton {
+    width: 110px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .cartContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .darkPaymentsBox {
+    width: 45%;
+  }
+  .lightPaymentsBox {
+    width: 45%;
+  }
+  .darkPaymentsBox h2 {
+    font-size: 1.4rem;
+  }
+  .lightPaymentsBox h2 {
+    font-size: 1.4rem;
+  }
+  .darkButton {
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+  }
+  .lightButton {
+    width: 100px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .container {
+    padding: 25px 10px 0;
+  }
+  .cartContainer {
+    width: 280px;
+  }
+  .darkPaymentsBox h2 {
+    font-size: 1.3rem;
+  }
+  .lightPaymentsBox h2 {
+    font-size: 1.3rem;
+  }
+  .darkPaymentsBox {
+    width: 280px;
+  }
+  .lightPaymentsBox {
+    width: 280px;
+  }
+}
+
+

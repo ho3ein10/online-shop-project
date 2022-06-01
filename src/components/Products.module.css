@@ -1,0 +1,8 @@
+.container {
+  margin-top: 10vh;
+  min-height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
